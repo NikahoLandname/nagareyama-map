@@ -36,12 +36,12 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
         <script src="data/nagareyama_polygon_0.js"></script>
-        <script src="data/r2ka05214_7.js"></script>
-        <script src="data/r2kb05214_8.js"></script>
+        <script src="data/r2ka05214_3.js"></script>
+        <script src="data/r2kb05214_4.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[39.28253807410834,139.94725574934952],[39.30575141825362,139.97790646497586]]);
+        }).fitBounds([[39.258898223711526,139.93181770508176],[39.305332885107966,139.99311913633412]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -183,34 +183,10 @@
             maxNativeZoom: 18
         });
         layer_H25_1;
-        map.createPane('pane__2');
-        map.getPane('pane__2').style.zIndex = 402;
-        var layer__2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', {
-            pane: 'pane__2',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 2,
-            maxNativeZoom: 16
-        });
-        layer__2;
-        map.createPane('pane__3');
-        map.getPane('pane__3').style.zIndex = 403;
-        var layer__3 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png', {
-            pane: 'pane__3',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 5,
-            maxNativeZoom: 15
-        });
-        layer__3;
-        map.createPane('pane_H28_4');
-        map.getPane('pane_H28_4').style.zIndex = 404;
-        var layer_H28_4 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', {
-            pane: 'pane_H28_4',
+        map.createPane('pane_H28_2');
+        map.getPane('pane_H28_2').style.zIndex = 402;
+        var layer_H28_2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', {
+            pane: 'pane_H28_2',
             opacity: 1.0,
             attribution: '',
             minZoom: 1,
@@ -218,70 +194,9 @@
             minNativeZoom: 2,
             maxNativeZoom: 18
         });
-        layer_H28_4;
-        map.addLayer(layer_H28_4);
-        map.createPane('pane_1S49S53_5');
-        map.getPane('pane_1S49S53_5').style.zIndex = 405;
-        var layer_1S49S53_5 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg', {
-            pane: 'pane_1S49S53_5',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 10,
-            maxNativeZoom: 17
-        });
-        layer_1S49S53_5;
-        map.createPane('pane_4S36S44_6');
-        map.getPane('pane_4S36S44_6').style.zIndex = 406;
-        var layer_4S36S44_6 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png', {
-            pane: 'pane_4S36S44_6',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 10,
-            maxNativeZoom: 17
-        });
-        layer_4S36S44_6;
-        function pop_r2ka05214_7(feature, layer) {
-            var popupContent = '<table>\
-                </table>';
-            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
-			layer.on('popupopen', function(e) {
-				addClassToPopupIfMedia(content, e.popup);
-			});
-			layer.bindPopup(content, { maxHeight: 400 });
-        }
-
-        function style_r2ka05214_7_0() {
-            return {
-                pane: 'pane_r2ka05214_7',
-                opacity: 1,
-                color: 'rgba(35,35,255,0.489)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0, 
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_r2ka05214_7');
-        map.getPane('pane_r2ka05214_7').style.zIndex = 407;
-        map.getPane('pane_r2ka05214_7').style['mix-blend-mode'] = 'normal';
-        var layer_r2ka05214_7 = new L.geoJson(json_r2ka05214_7, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_r2ka05214_7',
-            layerName: 'layer_r2ka05214_7',
-            pane: 'pane_r2ka05214_7',
-            onEachFeature: pop_r2ka05214_7,
-            style: style_r2ka05214_7_0,
-        });
-        bounds_group.addLayer(layer_r2ka05214_7);
-        map.addLayer(layer_r2ka05214_7);
-        function pop_r2kb05214_8(feature, layer) {
+        layer_H28_2;
+        map.addLayer(layer_H28_2);
+        function pop_r2ka05214_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">PREF_NAME</th>\
@@ -296,6 +211,14 @@
                         <td>' + (feature.properties['S_NAME'] !== null ? autolinker.link(String(feature.properties['S_NAME']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                        <th scope="row">JINKO</th>\
+                        <td>' + (feature.properties['JINKO'] !== null ? autolinker.link(String(feature.properties['JINKO']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">SETAI</th>\
+                        <td>' + (feature.properties['SETAI'] !== null ? autolinker.link(String(feature.properties['SETAI']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">KCODE1</th>\
                         <td>' + (feature.properties['KCODE1'] !== null ? autolinker.link(String(feature.properties['KCODE1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -307,9 +230,70 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_r2kb05214_8_0() {
+        function style_r2ka05214_3_0() {
             return {
-                pane: 'pane_r2kb05214_8',
+                pane: 'pane_r2ka05214_3',
+                opacity: 1,
+                color: 'rgba(35,35,255,0.489)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 4.0, 
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_r2ka05214_3');
+        map.getPane('pane_r2ka05214_3').style.zIndex = 403;
+        map.getPane('pane_r2ka05214_3').style['mix-blend-mode'] = 'normal';
+        var layer_r2ka05214_3 = new L.geoJson(json_r2ka05214_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_r2ka05214_3',
+            layerName: 'layer_r2ka05214_3',
+            pane: 'pane_r2ka05214_3',
+            onEachFeature: pop_r2ka05214_3,
+            style: style_r2ka05214_3_0,
+        });
+        bounds_group.addLayer(layer_r2ka05214_3);
+        map.addLayer(layer_r2ka05214_3);
+        function pop_r2kb05214_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">PREF_NAME</th>\
+                        <td>' + (feature.properties['PREF_NAME'] !== null ? autolinker.link(String(feature.properties['PREF_NAME']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">CITY_NAME</th>\
+                        <td>' + (feature.properties['CITY_NAME'] !== null ? autolinker.link(String(feature.properties['CITY_NAME']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">S_NAME</th>\
+                        <td>' + (feature.properties['S_NAME'] !== null ? autolinker.link(String(feature.properties['S_NAME']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">JINKO</th>\
+                        <td>' + (feature.properties['JINKO'] !== null ? autolinker.link(String(feature.properties['JINKO']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">SETAI</th>\
+                        <td>' + (feature.properties['SETAI'] !== null ? autolinker.link(String(feature.properties['SETAI']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">KCODE1</th>\
+                        <td>' + (feature.properties['KCODE1'] !== null ? autolinker.link(String(feature.properties['KCODE1']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+			layer.on('popupopen', function(e) {
+				addClassToPopupIfMedia(content, e.popup);
+			});
+			layer.bindPopup(content, { maxHeight: 400 });
+        }
+
+        function style_r2kb05214_4_0() {
+            return {
+                pane: 'pane_r2kb05214_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.561)',
                 dashArray: '',
@@ -322,30 +306,26 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_r2kb05214_8');
-        map.getPane('pane_r2kb05214_8').style.zIndex = 408;
-        map.getPane('pane_r2kb05214_8').style['mix-blend-mode'] = 'normal';
-        var layer_r2kb05214_8 = new L.geoJson(json_r2kb05214_8, {
+        map.createPane('pane_r2kb05214_4');
+        map.getPane('pane_r2kb05214_4').style.zIndex = 404;
+        map.getPane('pane_r2kb05214_4').style['mix-blend-mode'] = 'normal';
+        var layer_r2kb05214_4 = new L.geoJson(json_r2kb05214_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_r2kb05214_8',
-            layerName: 'layer_r2kb05214_8',
-            pane: 'pane_r2kb05214_8',
-            onEachFeature: pop_r2kb05214_8,
-            style: style_r2kb05214_8_0,
+            dataVar: 'json_r2kb05214_4',
+            layerName: 'layer_r2kb05214_4',
+            pane: 'pane_r2kb05214_4',
+            onEachFeature: pop_r2kb05214_4,
+            style: style_r2kb05214_4_0,
         });
-        bounds_group.addLayer(layer_r2kb05214_8);
-        map.addLayer(layer_r2kb05214_8);
+        bounds_group.addLayer(layer_r2kb05214_4);
+        map.addLayer(layer_r2kb05214_4);
         var overlaysTree = [
         {label: '<b>大字・小字</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/r2kb05214_8.png" /> r2kb05214', layer: layer_r2kb05214_8},
-            {label: '<img src="legend/r2ka05214_7.png" /> r2ka05214', layer: layer_r2ka05214_7},]},
+            {label: '<img src="legend/r2kb05214_4.png" /> r2kb05214', layer: layer_r2kb05214_4},
+            {label: '<img src="legend/r2ka05214_3.png" /> r2ka05214', layer: layer_r2ka05214_3},]},
         {label: '<b>Base map</b>',  selectAllCheckbox: true, children: [
-            {label: "モノクロ写真4(S36∼S44)", layer: layer_4S36S44_6, radioGroup: 'bm' },
-            {label: "写真1(S49∼S53)", layer: layer_1S49S53_5, radioGroup: 'bm' },
-            {label: "全国最新写真(H28)", layer: layer_H28_4, radioGroup: 'bm' },
-            {label: "色別標高図", layer: layer__3, radioGroup: 'bm' },
-            {label: "陰影起伏図", layer: layer__2, radioGroup: 'bm' },
+            {label: "全国最新写真(H28)", layer: layer_H28_2, radioGroup: 'bm' },
             {label: "地理院地図(H25)", layer: layer_H25_1, radioGroup: 'bm' },]},
         {label: '<b>流れ山</b>',  selectAllCheckbox: true, children: [
             {label: '<img src="legend/nagareyama_polygon_0.png" /> nagareyama_polygon', layer: layer_nagareyama_polygon_0},]},]
@@ -411,12 +391,12 @@
         });       
         setBounds();
         var i = 0;
-        layer_r2ka05214_7.eachLayer(function(layer) {
+        layer_r2ka05214_3.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['S_NAME'] !== null?String('<div style="color: #3232ff; font-size: 20pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['S_NAME']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_r2ka05214_7'});
+            layer.bindTooltip((layer.feature.properties['S_NAME'] !== null?String('<div style="color: #3232ff; font-size: 20pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['S_NAME']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_r2ka05214_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -424,27 +404,27 @@
               i++;
         });
         var i = 0;
-        layer_r2kb05214_8.eachLayer(function(layer) {
+        layer_r2kb05214_4.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['S_NAME'] !== null?String('<div style="color: #ff3232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['S_NAME']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_r2kb05214_8'});
+            layer.bindTooltip((layer.feature.properties['S_NAME'] !== null?String('<div style="color: #ff3232; font-size: 10pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['S_NAME']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_r2kb05214_4'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-        resetLabels([layer_r2ka05214_7,layer_r2kb05214_8]);
+        resetLabels([layer_r2ka05214_3,layer_r2kb05214_4]);
         map.on("zoomend", function(){
-            resetLabels([layer_r2ka05214_7,layer_r2kb05214_8]);
+            resetLabels([layer_r2ka05214_3,layer_r2kb05214_4]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_r2ka05214_7,layer_r2kb05214_8]);
+            resetLabels([layer_r2ka05214_3,layer_r2kb05214_4]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_r2ka05214_7,layer_r2kb05214_8]);
+            resetLabels([layer_r2ka05214_3,layer_r2kb05214_4]);
         });
         </script>        
     </body>
